@@ -53,7 +53,7 @@ namespace WebApi.Middlewares
                 }
                 var result = JsonSerializer.Serialize(responseModel);
 
-                await response.WriteAsync(result);
+                await response.WriteAsync(result.ToString());
             }
         }
     }
